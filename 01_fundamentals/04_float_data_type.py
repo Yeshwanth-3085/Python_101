@@ -1,6 +1,5 @@
 # float: Basically fractional numbers and decimal numbers
 # again negative end to positive end
-# also precision isn't always great
 
 a = -10.5
 b = 0.0
