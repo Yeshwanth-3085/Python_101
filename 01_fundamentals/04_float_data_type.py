@@ -16,8 +16,8 @@ small = 3.2e-4
 large = 5.7e8
 
 print("Scientific Notation")
-print(small)
-print(large)
+print(f"3.2e-4: {small}")
+print(f"5.7e8: {large}")
 print(type(small), type(large))
 
 print()
@@ -29,8 +29,9 @@ print()
 # so some decimal values cannot be represented exactly.
 print("Floating Point Precision")
 
-print(0.1 + 0.2)
-print(0.1 + 0.2 == 0.3)
+print(f"Supposed to be: 0.1 + 0.2 = 0.3")
+print(f"Reality: 0.1 + 0.2 = {0.1 + 0.2}")
+print(f"0.1 + 0.2 == 0.3: {0.1 + 0.2 == 0.3}")
 
 print()
 print("-" * 50)
@@ -38,20 +39,43 @@ print()
 
 print("Type Conversion")
 
-print(float(10))
-print(float("3.14"))
-print(int(3.99))
-
-print(type(float(10)))
+print(f"int -> float: 10 -> {float(10)}")
+print(f"str -> float: '3.14' -> {float('3.14')}")
+print(f"float -> int: 3.99 -> {int(3.99)}")
 
 print()
 print("-" * 50)
 print()
 
-positive_inf = float("inf")
-negative_inf = float("-inf")
-not_a_number = float("nan")
+import math
 
-print(positive_inf)
-print(negative_inf)
-print(not_a_number)
+x = float('nan')
+y = float('inf')
+z = float('-inf')
+
+print("Special float cousins")
+
+print()
+
+print(f'{x}: {type(x)}, {y}: {type(y)}, {z}: {type(z)}')
+
+print()
+
+print(f'nan == nan: {x == x}')
+print(f'inf == inf: {y == y}')
+print(f'-inf == -inf: {z == z}')
+
+print()
+
+print(f'inf + 1 = {y + 1}')
+print(f'inf * -1 = {y * -1}')
+print(f'inf - inf = {y - y}')
+print(f'inf / inf = {y / y}')
+print(f'0.0 * inf = {0.0 * y}')
+
+print()
+
+print(f'math.isnan(nan): {math.isnan(x)}')
+print(f'math.isinf(inf): {math.isinf(y)}')
+print(f'math.isinf(-inf): {math.isinf(z)}')
+print(f'math.isfinite(3.14): {math.isfinite(3.14)}')
