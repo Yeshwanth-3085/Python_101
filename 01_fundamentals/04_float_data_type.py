@@ -1,11 +1,13 @@
 # float: Basically fractional numbers and decimal numbers
 # again negative end to positive end
 
+import math
+
 a = -10.5
 b = 0.0
 c = 10.5
 
-print("Flaot Data Type")
+print("Float Data Type")
 print(a, b, c)
 print(type(a), type(b), type(c))
 print()
@@ -42,18 +44,18 @@ print("Type Conversion")
 print(f"int -> float: 10 -> {float(10)}")
 print(f"str -> float: '3.14' -> {float('3.14')}")
 print(f"float -> int: 3.99 -> {int(3.99)}")
+print(f"str -> float verification: '3.14' : {type('3.14')} -> 3.14 : {type(float('3.14'))}")
 
 print()
 print("-" * 50)
 print()
 
-import math
 
 x = float('nan')
 y = float('inf')
 z = float('-inf')
 
-print("Special float cousins")
+print("Special float values")
 
 print()
 
