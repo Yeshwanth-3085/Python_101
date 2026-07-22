@@ -75,6 +75,10 @@ sample_str = "zebra"
 print("Common Built-in Functions")
 print(f"sample_str = {sample_str}")
 
+# len() returns the length of the string
+print("\nlen()")
+print(f"len(sample_str) = {len(sample_str)}")
+
 # min() returns the smallest character
 # according to character ordering.
 print("\nmin()")
