@@ -1,4 +1,4 @@
-# String Methods: Search Methods
+# String Methods: Search and Replace Methods
 
 some_str = "Hello World!"
 
@@ -71,5 +71,14 @@ print(f"some_str = {some_str}")
 print(f'some_str.endswith("!") -> {some_str.endswith("!")}')
 print(f'some_str.endswith("World!") -> {some_str.endswith("World!")}')
 print(f'some_str.endswith("H") -> {some_str.endswith("H")}')
+
+print()
+print("-" * 50)
+print()
+
+print("replace(): Replaces all occurrences of a specified substring with another substring.")
+print(f"some_str = {some_str}")
+print(f'some_str.replace("World", "Python") -> {some_str.replace("World", "Python")}')
+print(f'"banana".replace("a", "o") -> {"banana".replace("a", "o")}')
 
 print()
